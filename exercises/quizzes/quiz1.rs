@@ -12,6 +12,18 @@
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
 
+const RUSTBUCK_PRICE: u32 = 2;
+const MAX_APPLES: u32 = 40;
+const PROMOTIONAL_PRICE: u32 = 1;
+
+fn calculate_price_of_apples(quantity: u32) -> u32 {
+    if(quantity <= MAX_APPLES) {
+        quantity * RUSTBUCK_PRICE
+    } else {
+        quantity * PROMOTIONAL_PRICE
+    }
+}
+
 fn main() {
     // You can optionally experiment here.
 }
